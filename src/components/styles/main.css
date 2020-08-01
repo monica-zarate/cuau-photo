@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center {
+.flex-center, .header__title-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +41,102 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header {
+  padding: 1rem 2rem;
+  background-color: #212529;
+  width: 100%;
+}
+
+.header__title {
+  font-family: "Roboto Slab Bold";
+  font-size: 3rem;
+  text-align: center;
+  color: #e9ecef;
+}
+
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 4rem;
+  }
+}
+
+.header__subtitle {
+  font-size: 1.5rem;
+  font-family: "Roboto Bold";
+  color: #e9ecef;
+}
+
+@media (min-width: 1440px) {
+  .header__subtitle {
+    font-size: 2rem;
+  }
+}
+
+.header__nav {
+  padding: 2rem 0;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .header__nav-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 768px;
+  }
+}
+
+.header__li {
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-top: 4px solid #212529;
+  border-bottom: 4px solid #212529;
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .header__li {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__li {
+    font-size: 2rem;
+    width: 10rem;
+  }
+  .header__li:hover {
+    border-top: 4px solid #e9ecef;
+    border-bottom: 4px solid #e9ecef;
+    padding: 0.5rem 0;
+  }
+}
+
+.header__nav-links {
+  color: #e9ecef;
+}
+
+.landing {
+  background-image: url("/imgs/hero.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 @font-face {

@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <div className="header__title-wrapper">
-        <Link to={`/`} className="header__title-link">
-          <h1 className="header__title">Cuau Fotografía</h1>
-        </Link>
-      </div>
+      <Link to={`/`} className="header__title-link">
+        <h1 className="header__title">Cuau</h1>
+        <span className="header__subtitle">Fotografía</span>
+      </Link>
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__li">
@@ -24,7 +23,7 @@ function Header() {
           </li>
           <li className="header__li">
             <Link to={`/acerca-de`} className="header__nav-links">
-              Acerca de
+              Bio
             </Link>
           </li>
         </ul>

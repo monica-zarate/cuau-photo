@@ -4,6 +4,7 @@ import "./styles/main.css";
 function Gallery() {
   return (
     <div className="gallery">
+      <h2>Galería Component</h2>
       <div className="gallery__vertical">
         <img src="" alt="" className="gallery__photo--ver" />
         <img src="" alt="" className="gallery__photo--ver" />
