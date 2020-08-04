@@ -72,7 +72,6 @@ function Header() {
           </Link>
         </li>
       </ul>
-
       <div className="header__burger" onClick={navSlide}>
         <div className="line1"></div>
         <div className="line2"></div>

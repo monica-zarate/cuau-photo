@@ -5,7 +5,7 @@ import Social from "./Social";
 function Landing() {
   return (
     <>
-      <div className="landing">Hero image here</div>
+      <div className="landing"></div>
       <Social />
     </>
   );

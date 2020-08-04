@@ -1,7 +1,19 @@
 // Landing Component Styles
 
 .landing {
-  background-image: url("/imgs/hero.jpg");
+  background-color: $landing-bg;
+  background-image: url("/imgs/heromob.png");
   background-size: cover;
+  background-position: center;
   height: 100vh;
+
+  @include tablet {
+    background-image: url("/imgs/herodesk.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @include desktop {
+    // background-size: cover;
+  }
 }

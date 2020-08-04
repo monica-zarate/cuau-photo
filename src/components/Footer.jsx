@@ -5,7 +5,9 @@ function Footer() {
   return (
     <div className="footer">
       <h3 className="footer__title">Cuau Fotografía</h3>
-      <p className="footer__description">Copyright 2020</p>
+      <p className="footer__description">
+        © 2020 Todos los derechos reservados
+      </p>
     </div>
   );
 }
