@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center, .header__title-link {
+.flex-center, .header__title-link, .contact, .contact__email-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,6 +131,7 @@ body {
   transition: -webkit-transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  z-index: 99;
 }
 
 @media (min-width: 768px) {
@@ -277,6 +278,51 @@ body {
 .footer__description {
   font-size: 0.75rem;
   font-style: italic;
+}
+
+.contact {
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 4rem 3rem;
+  }
+}
+
+.contact__title {
+  font-family: "Roboto Slab Regular";
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+.contact__img {
+  width: 15rem;
+}
+
+@media (min-width: 768px) {
+  .contact__img {
+    width: 20rem;
+  }
+}
+
+.contact__email-wrapper {
+  margin: 1.5rem 0;
+}
+
+.contact__icon {
+  width: 2rem;
+  margin: 0.5rem 0;
+}
+
+.contact__text {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.contact__mailto {
+  margin: 0.5rem 0;
 }
 
 @font-face {

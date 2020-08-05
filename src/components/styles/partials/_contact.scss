@@ -1,0 +1,44 @@
+// Contact Component Styles
+
+.contact {
+  padding: 2rem 1.5rem;
+  @extend .flex-center;
+
+  @include tablet {
+    padding: 4rem 3rem;
+  }
+
+  &__title {
+    font-family: $slab-regular;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+  }
+
+  &__img {
+    width: 15rem;
+
+    @include tablet {
+      width: 20rem;
+    }
+  }
+
+  &__email-wrapper {
+    @extend .flex-center;
+    margin: 1.5rem 0;
+  }
+
+  &__icon {
+    width: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  &__mailto {
+    margin: 0.5rem 0;
+  }
+}
