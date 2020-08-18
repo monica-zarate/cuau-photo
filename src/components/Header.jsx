@@ -27,16 +27,6 @@ function Header() {
     burger.classList.toggle("toggle");
   };
 
-  let tabletMenu = () => {
-    if (window.attachEvent) {
-      window.attachEvent("onresize", () => {
-        if (window.innerWidth < 768) {
-          navSlide();
-        }
-      });
-    }
-  };
-
   return (
     <nav className="header">
       <Link to={`/`} className="header__title-link">
@@ -48,7 +38,7 @@ function Header() {
           <Link
             to={`/galeria`}
             className="header__nav-links"
-            onClick={tabletMenu}
+            onClick={navSlide}
           >
             Galería
           </Link>
@@ -57,7 +47,7 @@ function Header() {
           <Link
             to={`/contacto`}
             className="header__nav-links"
-            onClick={tabletMenu}
+            onClick={navSlide}
           >
             Contacto
           </Link>
@@ -66,7 +56,7 @@ function Header() {
           <Link
             to={`/acerca-de`}
             className="header__nav-links"
-            onClick={tabletMenu}
+            onClick={navSlide}
           >
             Bio
           </Link>

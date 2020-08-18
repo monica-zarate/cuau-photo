@@ -1,0 +1,38 @@
+// Gallery Component Styles
+
+.gallery {
+  padding: 2rem 1rem;
+
+  @include tablet {
+    padding: 4rem 3rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    column-count: 1;
+    column-gap: 1.25rem;
+    line-height: 1.25rem;
+    padding: 1.25rem;
+
+    @include tablet {
+      column-count: 4;
+      display: block;
+    }
+  }
+
+  &__photo {
+    width: 17.5rem;
+    border: 8px solid $highlight;
+    margin: 0 0 1rem 0;
+
+    @include tablet {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16),
+        0 3px 6px 0 rgba(0, 0, 0, 0.32);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// Social Component Styles
+
+.social {
+  background-color: $landing-bg;
+  padding: 2rem 1rem;
+  border-top: 4px solid $highlight;
+
+  @include tablet {
+    padding: 2.5rem 2rem;
+  }
+}

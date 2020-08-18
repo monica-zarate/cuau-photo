@@ -1,0 +1,45 @@
+// About Component Styles
+
+.about {
+  padding: 2rem 1.5rem;
+  @extend .flex-center;
+
+  @include tablet {
+    padding: 4rem 3rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: $slab-medium;
+    text-align: center;
+    margin: 0 0 1rem 0;
+
+    @include tablet {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  &__photo {
+    width: 15rem;
+    margin: 0 0 1rem 0;
+    @include tablet {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  &__description,
+  &__text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  &__social {
+    @extend .flex-center;
+    margin: 2rem 0 0 0;
+  }
+
+  &__insta-link {
+    width: 3rem;
+    margin: 1rem 0;
+  }
+}
