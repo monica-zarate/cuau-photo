@@ -318,7 +318,6 @@ body {
   -webkit-column-gap: 1.25rem;
           column-gap: 1.25rem;
   line-height: 1.25rem;
-  padding: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -330,18 +329,12 @@ body {
 }
 
 .gallery__photo {
-  width: 17.5rem;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
   border: 8px solid #212529;
   margin: 0 0 1rem 0;
-}
-
-@media (min-width: 768px) {
-  .gallery__photo {
-    width: 100%;
-    height: auto;
-    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
-  }
 }
 
 .contact {
@@ -426,6 +419,12 @@ body {
 .about__description, .about__text {
   text-align: center;
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .about__description, .about__text {
+    max-width: 42rem;
+  }
 }
 
 .about__social {

@@ -31,6 +31,10 @@
   &__text {
     text-align: center;
     font-size: 1.25rem;
+
+    @include tablet {
+      max-width: 42rem;
+    }
   }
 
   &__social {
