@@ -4,8 +4,10 @@
   background-color: $landing-bg;
   padding: 2rem 1rem;
   border-top: 4px solid $highlight;
+  display: none;
 
   @include tablet {
+    display: block;
     padding: 2.5rem 2rem;
   }
 }

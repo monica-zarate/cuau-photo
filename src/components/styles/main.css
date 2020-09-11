@@ -47,6 +47,7 @@ body {
 .header {
   padding: 1rem 2rem;
   background-color: #212529;
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +133,7 @@ body {
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   z-index: 99;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -268,10 +270,12 @@ body {
   background-color: #f0f0f0;
   padding: 2rem 1rem;
   border-top: 4px solid #212529;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .social {
+    display: block;
     padding: 2.5rem 2rem;
   }
 }
@@ -318,6 +322,7 @@ body {
   -webkit-column-gap: 1.25rem;
           column-gap: 1.25rem;
   line-height: 1.25rem;
+  padding: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -329,12 +334,18 @@ body {
 }
 
 .gallery__photo {
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
+  width: 17.5rem;
   border: 8px solid #212529;
   margin: 0 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .gallery__photo {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
+  }
 }
 
 .contact {
