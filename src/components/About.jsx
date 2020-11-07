@@ -17,7 +17,7 @@ function About() {
         paseando en bici.
       </p>
       <div className="about__social">
-        <p className="about__text">Sigue mis aventuras en Instagram!</p>
+        <p className="about__text">Sigue mis viajes en Instagram! <a href="https://www.instagram.com/cuau34/" target="blank">@cuau34</a></p>
         <a
           href="https://www.instagram.com/cuau34/"
           className="about__insta-link"

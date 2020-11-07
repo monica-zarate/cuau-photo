@@ -24,15 +24,14 @@
   }
 
   &__photo {
-    width: 17.5rem;
-    border: 8px solid $highlight;
+    width: auto;
     margin: 0 0 1rem 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
 
     @include tablet {
+      border: 8px solid $highlight;
       width: 100%;
       height: auto;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16),
-        0 3px 6px 0 rgba(0, 0, 0, 0.32);
     }
   }
 }

@@ -31,7 +31,7 @@ function Header() {
     <nav className="header">
       <Link to={`/`} className="header__title-link">
         <h1 className="header__title">Cuau</h1>
-        <span className="header__subtitle">Fotografía</span>
+        <span className="header__subtitle">Retrato</span>
       </Link>
       <ul className="header__nav">
         <li className="header__li">

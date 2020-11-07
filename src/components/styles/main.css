@@ -334,17 +334,17 @@ body {
 }
 
 .gallery__photo {
-  width: 17.5rem;
-  border: 8px solid #212529;
+  width: auto;
   margin: 0 0 1rem 0;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 @media (min-width: 768px) {
   .gallery__photo {
+    border: 8px solid #212529;
     width: 100%;
     height: auto;
-    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.32);
   }
 }
 

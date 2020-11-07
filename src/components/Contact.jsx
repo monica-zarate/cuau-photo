@@ -16,8 +16,8 @@ function Contact() {
           Escríbeme tu idea, opciones de fechas y locación, te responderé a la
           brevedad.
         </p>
-        <a href="mailto:" className="contact__mailto">
-          cuau@gmail.com
+        <a href="mailto:cuauretrato21@gmail.com" className="contact__mailto">
+          cuauretrato21@gmail.com
         </a>
       </div>
     </div>
